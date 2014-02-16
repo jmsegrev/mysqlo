@@ -17,6 +17,6 @@
   "author": "Jmsegrev",
   "license": "BSD",
   "dependencies": {
-    "mysqlp": "~0.0.x",
+    "mysqlp": "~0.0.x"
   }
 }

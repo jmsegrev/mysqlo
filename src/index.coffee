@@ -8,7 +8,6 @@ module.exports.config = (config) ->
 
   @models = util.loadModules config.modelsPath, [], (loadedModule) ->
 
-    console.log 'loading'
     obj = Object.create model(db)
     if typeof loadedModule is 'function'
       loadedModule obj
