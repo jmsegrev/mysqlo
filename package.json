@@ -1,0 +1,22 @@
+{
+  "name": "sqlo",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Mysql wrapper with promises and object interfaced queries",
+  "main": "index.js",
+  "keywords": [
+    "mysql",
+    "promises",
+    "bluebird",
+    "organization",
+    "sql",
+    "model",
+    "queries",
+    "coffeescript"
+  ],
+  "author": "Jmsegrev",
+  "license": "BSD",
+  "dependencies": {
+    "mysqlp": "~0.0.x",
+  }
+}
