@@ -1,4 +1,3 @@
-
 # Mysqlo
 
 If you prefer to use SQL instead of ORMs to query your Mysql database, this will help you organize better.
@@ -82,9 +81,8 @@ module.exports = (db) ->
 
 ```CoffeeScript
 
-models = sqlo.config configuration                                                
+models = sqlo.config configuration
 # after configuration is set 'sqlo.models' will also have your models
-                                                                                 
-models.user.findById(98323).then (result) ->                                             
-  console.log result   
-    
+
+models.user.findById(98323).then (result) ->
+  console.log result
