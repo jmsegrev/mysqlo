@@ -12,7 +12,7 @@ If you prefer to use SQL instead of ORMs to query your Mysql database, this will
 ### Configuration
 
 ```CoffeeScript
-sqlo = require 'sqlo'                       
+mysqlo = require 'mysqlo'                       
                                                                                   
 configuration = 
   # path to where the models will be loaded from 
@@ -30,7 +30,7 @@ configuration =
       user: "root",                                                               
       password: "3414"                                                            
 
-models = sqlo.config configuration
+models = mysqlo.config configuration
 ```
 
 For more details on databases configuration and quering please refer to [Mysqlp](https://github.com/jmsegrev/mysqlp).
@@ -81,8 +81,8 @@ module.exports = (db) ->
 
 ```CoffeeScript
 
-models = sqlo.config configuration
-# after configuration is set 'sqlo.models' will also have your models
+models = mysqlo.config configuration
+# after configuration is set 'mysqlo.models' will also have your models
 
 models.user.findById(98323).then (result) ->
   console.log result
